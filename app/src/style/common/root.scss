@@ -1,0 +1,27 @@
+$Fonts: ("SegoeUI", "SemiBold", 600),  
+        ("SegoeUI", "Regular", 400),
+        ("Whitney", "Book", 350),
+        ("Whitney", "Medium", 500),
+        ("Whitney", "Semibold", 600),
+        ("fontawesome", "light", 300);               ;
+
+@each  $family, $name, $weight in $Fonts {
+    @font-face {
+        font-family: $family;
+        src: url(../fonts/#{$family}/#{$family}-#{$name}.ttf);
+        font-weight: $weight;
+    }
+}
+
+$white: #fff;
+$black: #2E2D35;
+$blackText: #474351;
+$adv: #E5E5E5;
+$cardBg: #F6F5F9;
+$greyText: #474351;
+$grey:#918D9A;
+$headerBg: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+$orange: #F25B24;
+$modalBg: rgba(28, 24, 47, 0.3);
+$border: #DDDAE7;
+

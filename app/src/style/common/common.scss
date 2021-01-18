@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Whitney";
+ 
+}
+
+.container {
+    @include container();
+}
+
+.row {
+    @include row();
+}
+
+.icon::before {
+    font-family: "fontawesome";
+    content: "\f0c9";
+    font-weight: 300;
+}
+
+.btn {
+    color: $white;
+    background: $orange;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 16px 60px;
+    border: none;
+    @include media($md) {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+    @include media($sm) {
+        padding: 5px 10px;
+        font-size: 12px;
+        width: max-content;
+    }
+
+}

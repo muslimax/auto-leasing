@@ -1,0 +1,116 @@
+.advantage {
+    margin: 130px auto;
+    @include media($lg) {
+        margin: 60px auto;
+    }
+    @include media($xs) {
+        margin: 30px auto;
+    }
+   
+    
+    &__title {
+        font-size: 40px;
+        line-height: 52px;
+        color: $black;
+        font-family: "SegoeUI";
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 50px;
+        @include media($lg) {
+            font-size: 30px;
+            margin: 0 auto 50px auto;
+            line-height: 40px;
+        }
+        @include media($sm) {
+            text-align: center;
+        }
+        @include media($xs) {
+            margin: 0 auto 30px auto;
+        }
+       
+        
+        
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+        @include media($sm){
+        grid-template-columns: 1fr; 
+        }
+
+    }
+    
+}
+.card {
+    display: flex;
+    background-color: $cardBg;
+    justify-content: space-between;
+    border-radius: 10px;
+    @include media($lg) {
+        width: 100%;
+        text-align: center;
+    }
+    @include media($xs) {
+        width: 90%;
+        margin: auto;
+    }
+    
+    &__info {
+        color: $greyText;
+        font-family: "Segoe UI";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        padding: 43px 40px;
+        @include media($lg) {
+            width: 60%;
+            padding: 23px 20px;
+        }
+        @include media($md) {
+            width: 50%;
+            padding: 15px 15px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        @include media($sm) {
+            width: 100%;
+            font-size: 16px;
+            line-height: 23px;
+            padding: 43px 40px;
+        }
+        @include media($xs) {
+            width: 90%;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 15px 15px;
+        }
+    }
+
+    &__title{
+        color: $black;
+        font-family: "Segoe UI";
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 22px;
+       
+        @include media($md) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__img {
+        margin: 21px 10px;
+        @include media($lg) {
+            width: 70%;
+            height: 80%;
+        }
+        @include media($xs) {
+            width: 60%;
+            height: 70%;
+        }
+       
+    } 
+}
